@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "package": "pl.fuzjajadrowa.locatorbar.mixin",
+  "compatibilityLevel": "JAVA_${java}",
+  "minVersion": "0.8",
+  "client": [
+    "client.ExperienceBarMixin",
+    "client.ExperienceLevelMixin",
+    "client.LocatorBarRendererMixin",
+    "client.OptionsScreenMixin"
+  ],
+  "mixins": [
+    "CompassItemMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

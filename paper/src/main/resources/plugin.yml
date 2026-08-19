@@ -1,0 +1,24 @@
+name: LocatorBar
+version: "1.2.3"
+main: pl.fuzjajadrowa.locatorbar.paper.LocatorBarPaperPlugin
+api-version: "1.21"
+author: Krylo_plays & FuzjaJadrowa
+description: Dedicated Paper / Spigot server plugin for LocatorBar. Synchronizes player locators and waypoints with client HUDs.
+website: https://modrinth.com/mod/locatorbar-ultimate
+
+commands:
+  locatorbar:
+    description: Manage LocatorBar server settings
+    permission: locatorbar.admin
+    usage: /<command> [reload|status|info]
+
+permissions:
+  locatorbar.use:
+    description: Allows players to receive locator bar data from the server
+    default: true
+  locatorbar.admin:
+    description: Allows reloading and managing LocatorBar server settings
+    default: op
+  locatorbar.vanish.bypass:
+    description: Allows seeing vanished players on the locator bar
+    default: op

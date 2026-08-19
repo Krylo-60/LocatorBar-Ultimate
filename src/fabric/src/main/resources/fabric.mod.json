@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "locatorbar",
+  "version": "${version}",
+  "name": "Locator Bar",
+  "description": "Reworked concept of a player locator bar for Minecraft. Simple, clean bar at the top of your screen.",
+  "authors": [
+    "FuzjaJadrowa"
+  ],
+  "contact": {
+    "homepage": "https://fuzjajadrowa.pl",
+    "issues": "https://github.com/FuzjaJadrowa/LocatorBar/issues"
+  },
+  "license": "GPL-3.0",
+  "icon": "assets/locatorbar/textures/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "pl.fuzjajadrowa.locatorbar.fabric.LocatorBarFabric"
+    ],
+    "client": [
+      "pl.fuzjajadrowa.locatorbar.fabric.LocatorBarFabricClient"
+    ],
+    "modmenu": [
+      "pl.fuzjajadrowa.locatorbar.fabric.LocatorBarModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "locatorbar.common.mixins.json",
+    "locatorbar.fabric.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${fabric_loader}",
+    "minecraft": "${minecraft}",
+    "java": ">=${java}"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}

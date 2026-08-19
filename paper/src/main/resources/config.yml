@@ -1,0 +1,25 @@
+# ==========================================================
+#              LocatorBar Paper Server Plugin
+# ==========================================================
+
+# How often (in server ticks) player positions are synced to clients.
+# 1 tick = ultra-smooth, 2 ticks = recommended (default), 5 ticks = lightweight
+sync-interval-ticks: 2
+
+# Maximum distance (in blocks) to broadcast player positions.
+# Set to -1 for unlimited (entire world).
+max-tracking-distance: 256.0
+
+# Whether players in Spectator mode should be visible on the bar.
+show-spectators: false
+
+# Whether to automatically respect Vanish plugins (SuperVanish, PremiumVanish, EssentialsX, CMI)
+respect-vanish: true
+
+# Server settings overrides sent to clients
+server-settings:
+  # Enable or disable player tracking server-wide
+  enable-player-markers: true
+  
+  # Maximum visible players sent per client
+  max-visible-players: 16
