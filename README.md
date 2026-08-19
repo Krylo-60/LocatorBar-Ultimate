@@ -82,3 +82,5 @@ GNU General Public License for more details: https://www.gnu.org/licenses/gpl-3.
 - **Original Creator**: [FuzjaJadrowa](https://github.com/FuzjaJadrowa/LocatorBar)
 - **Enhanced & Maintained by**: [Krylo_plays](https://github.com/Krylo-60)
 - **License**: [GNU General Public License v3.0 (GPL-3.0)](https://www.gnu.org/licenses/gpl-3.0.html)
+<!-- Star LocatorBar on GitHub if you enjoy the mod! -->
+
