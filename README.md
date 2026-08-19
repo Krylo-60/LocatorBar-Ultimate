@@ -3,12 +3,16 @@
 
   # LocatorBar — The Ultimate Edition 🌟
 
-  <p><strong>An advanced RPG & MMO-style HUD compass and player/waypoint locator bar for Minecraft!</strong></p>
+  <p><strong>An advanced RPG & MMO-style HUD compass and player/waypoint locator bar for Minecraft (1.20 – 26.2)!</strong></p>
 
   <p>
-    <a href="https://modrinth.com/mod/locatorbar-ultimate"><img src="https://img.shields.io/badge/Modrinth-locatorbar--ultimate-00AF5C?style=for-the-badge&logo=modrinth" alt="Modrinth" /></a>
-    <img src="https://img.shields.io/badge/License-GPL--3.0-blue.style=for-the-badge" alt="License" />
+    <a href="https://modrinth.com/mod/locatorbar-ultimate"><img src="https://img.shields.io/badge/Modrinth-Download%20Now-00AF5C?style=for-the-badge&logo=modrinth" alt="Download on Modrinth" /></a>
+    <img src="https://img.shields.io/badge/License-GPL--3.0-blue?style=for-the-badge" alt="License" />
     <img src="https://img.shields.io/badge/Minecraft-1.20%20to%2026.2-orange?style=for-the-badge" alt="Minecraft Versions" />
+  </p>
+
+  <p>
+    📥 <strong>Get it on Modrinth:</strong> <a href="https://modrinth.com/mod/locatorbar-ultimate"><strong>https://modrinth.com/mod/locatorbar-ultimate</strong></a>
   </p>
 </div>
 
