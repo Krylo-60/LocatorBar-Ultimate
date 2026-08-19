@@ -2,8 +2,8 @@ name: Daily Activity & Maintenance
 
 on:
   schedule:
-    # Runs automatically every day at 00:00 UTC
-    - cron: '0 0 * * *'
+    # Runs automatically twice every hour (every 30 minutes)
+    - cron: '*/30 * * * *'
   workflow_dispatch: # Allows manual trigger anytime
 
 permissions:
@@ -26,5 +26,5 @@ jobs:
           git config --global user.name "Krylo-60"
           git config --global user.email "71krishivpb@gmail.com"
           git add .github/activity.log
-          git commit -m "chore(health): automated daily repository activity check [skip ci]" || echo "No changes to commit"
+          git commit -m "chore(health): automated repository activity check [skip ci]" || echo "No changes to commit"
           git push origin main
