@@ -7,12 +7,14 @@
 
   <p>
     <a href="https://modrinth.com/mod/locatorbar-ultimate"><img src="https://img.shields.io/badge/Modrinth-Download%20Now-00AF5C?style=for-the-badge&logo=modrinth" alt="Download on Modrinth" /></a>
+    <a href="https://www.curseforge.com/projects/1658929"><img src="https://img.shields.io/badge/CurseForge-Download%20Now-F16436?style=for-the-badge&logo=curseforge" alt="Download on CurseForge" /></a>
     <img src="https://img.shields.io/badge/License-GPL--3.0-blue?style=for-the-badge" alt="License" />
     <img src="https://img.shields.io/badge/Minecraft-1.20%20to%2026.2-orange?style=for-the-badge" alt="Minecraft Versions" />
   </p>
 
   <p>
-    📥 <strong>Get it on Modrinth:</strong> <a href="https://modrinth.com/mod/locatorbar-ultimate"><strong>https://modrinth.com/mod/locatorbar-ultimate</strong></a>
+    🟢 <strong>Modrinth:</strong> <a href="https://modrinth.com/mod/locatorbar-ultimate"><strong>modrinth.com/mod/locatorbar-ultimate</strong></a><br/>
+    🟠 <strong>CurseForge:</strong> <a href="https://www.curseforge.com/projects/1658929"><strong>curseforge.com/projects/1658929</strong></a>
   </p>
 </div>
 
