@@ -1,11 +1,10 @@
 package pl.fuzjajadrowa.locatorbar.radar;
 
-import net.minecraft.client.MinecraftClient;
-import net.minecraft.registry.RegistryKeys;
-import net.minecraft.registry.entry.RegistryEntry;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.World;
-import net.minecraft.world.biome.Biome;
+import net.minecraft.client.Minecraft;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Holder;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.biome.Biome;
 
 public class BiomeRadar {
     private static boolean enabled = true;
@@ -15,27 +14,29 @@ public class BiomeRadar {
     public static void toggle() { enabled = !enabled; }
 
     public static String getCurrentBiomeAndWeather() {
-        MinecraftClient client = MinecraftClient.getInstance();
-        if (client == null || client.player == null || client.world == null) return "";
+        Minecraft client = Minecraft.getInstance();
+        if (client == null || client.player == null || client.level == null) return "";
 
-        BlockPos pos = client.player.getBlockPos();
-        RegistryEntry<Biome> biomeEntry = client.world.getBiome(pos);
+        BlockPos pos = client.player.blockPosition();
+        Holder<Biome> biomeEntry = client.level.getBiome(pos);
 
         String biomeName = "Unknown";
-        if (biomeEntry != null && biomeEntry.getKey().isPresent()) {
-            String raw = biomeEntry.getKey().get().getValue().getPath();
+        if (biomeEntry != null && biomeEntry.unwrapKey().isPresent()) {
+            String keyStr = biomeEntry.unwrapKey().get().toString();
+            String raw = keyStr.contains("/") ? keyStr.substring(keyStr.lastIndexOf('/') + 1).replace("]", "").trim() : keyStr;
+            if (raw.contains(":")) raw = raw.substring(raw.indexOf(':') + 1);
             biomeName = formatBiomeName(raw);
         }
 
         // Weather indicator
         String weather = "☀️";
-        if (client.world.isThundering()) {
+        if (client.level.isThundering()) {
             weather = "⚡ Storm";
-        } else if (client.world.isRaining()) {
+        } else if (client.level.isRaining()) {
             weather = "🌧️ Rain";
-        } else if (client.world.getRegistryKey() == World.NETHER) {
+        } else if (client.level.dimension() == Level.NETHER) {
             weather = "🔥 Nether";
-        } else if (client.world.getRegistryKey() == World.END) {
+        } else if (client.level.dimension() == Level.END) {
             weather = "🌌 Void";
         }
 
