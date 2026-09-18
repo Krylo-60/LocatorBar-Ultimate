@@ -51,6 +51,8 @@ jobs:
       fail-fast: false
       matrix:
         include:
+          - target: 26.3-fabric
+            name: "Fabric & Quilt (26.3)"
           - target: 26.2-fabric
             name: "Fabric & Quilt (26.2)"
           - target: 1.21.11-fabric
