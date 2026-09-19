@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "locatorbar",
   "version": "${version}",
-  "name": "Locator Bar",
+  "name": "LocatorBar: The Ultimate Edition",
   "description": "Reworked concept of a player locator bar for Minecraft. Simple, clean bar at the top of your screen.",
   "authors": [
     "Krylo_plays",
