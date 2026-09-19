@@ -6,10 +6,10 @@
   <p><strong>The ultimate RPG & MMO-style HUD compass and player/waypoint locator navigation system for Minecraft!</strong></p>
 
   <p>
-    <a href="https://modrinth.com/mod/locatorbar-ultimate"><img src="https://img.shields.io/badge/Modrinth-Download-00AF5C?style=for-the-badge&logo=modrinth" alt="Modrinth" /></a>
-    <a href="https://www.curseforge.com/projects/1658929"><img src="https://img.shields.io/badge/CurseForge-Download-F16436?style=for-the-badge&logo=curseforge" alt="CurseForge" /></a>
+    <a href="https://modrinth.com/mod/locatorbar-ultimate-edition"><img src="https://img.shields.io/badge/Modrinth-Download-00AF5C?style=for-the-badge&logo=modrinth" alt="Modrinth" /></a>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/locatorbar-ultimate-edition"><img src="https://img.shields.io/badge/CurseForge-Download-F16436?style=for-the-badge&logo=curseforge" alt="CurseForge" /></a>
     <a href="https://github.com/Krylo-60/LocatorBar-Ultimate"><img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github" alt="GitHub" /></a>
-    <img src="https://img.shields.io/badge/Minecraft-1.20%20to%2026.2-orange?style=for-the-badge" alt="Minecraft Versions" />
+    <img src="https://img.shields.io/badge/Minecraft-1.20%20to%2026.3-orange?style=for-the-badge" alt="Minecraft Versions" />
     <img src="https://img.shields.io/badge/License-GPL--3.0-blue?style=for-the-badge" alt="License" />
   </p>
 </div>
@@ -22,15 +22,24 @@
 
 ---
 
+## 🆕 What's New in 26.3 / Latest Update (v1.3.0)
+
+- **26.3 & 26.3-snapshot Support**: Complete compatibility with Minecraft 26.3 and 26.3 snapshot releases!
+- **Lunar Client Fix**: Updated `fabricloader` dependency bounds to `>=0.15.0` to resolve silent mod loading skips in Lunar Client and custom launchers.
+- **Embedded Custom Icon**: Features the high-res Ultimate Edition custom vector emblem across in-game mod menus.
+- **Unified Multi-Version Fat JAR**: Single optimized binary that runs seamlessly across MC 1.21.1, 26.2, and 26.3.
+
+---
+
 ## 🌟 Key Features
 
 ### 🧭 Dynamic Degrees & Precision Navigation
-* **Smooth Degree Numbers**: Continuous degree readouts (0° to 360°) with dynamic interval ticks ($15^\circ$ & $30^\circ$).
+* **Smooth Degree Numbers**: Continuous degree readouts (0° to 360°) with dynamic interval ticks (15° & 30°).
 * **Full Cardinal & Intercardinal Markers**: `N (0°)`, `NE (45°)`, `E (90°)`, `SE (135°)`, `S (180°)`, `SW (225°)`, `W (270°)`, `NW (315°)`.
 
 ### 🎯 Off-Screen Edge Indicators & Target Lock Glow
 * **Off-Screen Carets (`◄` / `►`)**: Never lose track of your waypoints or teammates. Glowing arrow indicators on the left and right edges show you which way to rotate your camera.
-* **Target Lock Glow**: When aiming directly toward an active tracked waypoint ($\pm 2.5^\circ$), a subtle pulse glow confirms you are locked on target.
+* **Target Lock Glow**: When aiming directly toward an active tracked waypoint (±2.5°), a subtle pulse glow confirms you are locked on target.
 
 ### 📍 In-Game Waypoint Creator (`B` Keybind)
 * Press **`B`** at any moment in-game to pop open the **Instant Waypoint Creator**!
@@ -53,31 +62,24 @@
 
 ---
 
+## 📥 Downloads & Links
+
+- **Modrinth Downloads**: [locatorbar-ultimate-edition on Modrinth](https://modrinth.com/mod/locatorbar-ultimate-edition)
+- **CurseForge Downloads**: [LocatorBar: The Ultimate Edition on CurseForge](https://www.curseforge.com/projects/1658929)
+- **Source Code**: [Krylo-60 / LocatorBar-Ultimate GitHub](https://github.com/Krylo-60/LocatorBar-Ultimate)
+
+---
+
 ## 📦 Compatibility & Supported Platforms
 
 | Platform | Type | Supported Versions | Notes |
 | :--- | :--- | :--- | :--- |
-| 🧵 **Fabric** | Client & Server | `1.20` – `26.2` | Native Fabric API support |
-| 🪡 **Quilt** | Client & Server | `1.20` – `26.2` | 100% compatible via Quilt loader |
+| 🧵 **Fabric** | Client & Server | `1.20` – `26.3` | Native Fabric API support (>=0.15.0) |
+| 🪡 **Quilt** | Client & Server | `1.20` – `26.3` | 100% compatible via Quilt loader |
 | 🔨 **NeoForge** | Client & Server | `1.21` – `1.21.4` | Native NeoForge event system |
 | ⚒️ **Forge** | Client & Server | `1.20.1` – `1.21.4` | Full Forge loader compatibility |
-| 📜 **Paper / Spigot** | Server Plugin | `1.20` – `26.2+` | Standalone server plugin with Vanish support |
-| ⚡ **Purpur / Folia** | Server Plugin | `1.20` – `26.2+` | Multi-threaded Folia & Purpur compatible |
-
----
-
-## 📥 Installation
-
-### 🎮 For Players (Client-side):
-1. Make sure you have **Fabric Loader**, **NeoForge**, or **Forge** installed.
-2. Download the appropriate `.jar` file from [Modrinth](https://modrinth.com/mod/locatorbar-ultimate) or [CurseForge](https://www.curseforge.com/projects/1658929).
-3. Place the downloaded `.jar` into your `.minecraft/mods` directory.
-4. Launch Minecraft and press **`K`** to toggle your new locator bar!
-
-### 🖥️ For Server Admins (Server-side):
-1. Download **`LocatorBar-Paper-1.2.3.jar`**.
-2. Place it into your server's `plugins/` directory.
-3. Restart your server. The plugin will automatically broadcast player locations to connected LocatorBar clients while respecting all vanish/stealth plugins (`EssentialsX`, `SuperVanish`, `PremiumVanish`, `CMI`).
+| 📜 **Paper / Spigot** | Server Plugin | `1.20` – `26.3+` | Standalone server plugin with Vanish support |
+| ⚡ **Purpur / Folia** | Server Plugin | `1.20` – `26.3+` | Multi-threaded Folia & Purpur compatible |
 
 ---
 
@@ -103,11 +105,6 @@ This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU General Public License for more details: https://www.gnu.org/licenses/gpl-3.0.html
 ```
 
 * **Original Creator**: [FuzjaJadrowa](https://github.com/FuzjaJadrowa/LocatorBar)
